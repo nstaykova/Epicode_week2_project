@@ -84,3 +84,25 @@ if total_deaths_s > total_deaths_n and average_gdp_n>average_gdp_s:
     print('\nWe have confirmed the hypothesis that countries with lower GPD per capita have higher death rates.')
 
 else: print('\nWe have contradicted the hypothesis that countries with lower GPD per capita have higher death rates.')
+
+import matplotlib.pyplot as plt
+
+continent = ['North America', 'South America']
+deaths_per_capita = [total_deaths_n, total_deaths_s]
+
+plt.bar(continent, deaths_per_capita)
+plt.title('Country Vs Deaths Per Capita')
+plt.xlabel('Country')
+plt.ylabel('Total deaths Per Capita')
+plt.show()
+
+
+import matplotlib.pyplot as plt
+
+continent = ['North America', 'South America']
+gdp_per_capita = [average_gdp_n, average_gdp_s]
+plt.bar(continent, gdp_per_capita)
+plt.title('Country Vs GDP Per Capita')
+plt.xlabel('Country')
+plt.ylabel('GDP Per Capita')
+plt.show()
