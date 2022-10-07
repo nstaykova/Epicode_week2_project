@@ -1,10 +1,10 @@
 """Questo progetto è mirato a verificare se nei continenti dove è presente un undice di GDP pro capite più basso il livello di morte è più alto.
  Per svolgere questa analisi abbiamo deciso di concentrarci su North e South America dato che hanno parametri simili sulla popolazione e soprattuto per densità di popolazione:
   - popolazione: 578mln North America e 4225.5mln South America
-  -densità della popolazione: 57 per mi2 per entrambi i paesi
-    Per calcolare il numero di morti pro capite e l'indice GDP utilizzeremo i dataset COVID-19 di Our World in Dtat, in particolare i seguenti dati:
-     - numero di morti (new_deaths: New deaths attributed to COVID-19)
-     - numero di popolazione (gdp_per_capita: Gross domestic product at purchasing power parity (constant 2011 international dollars), most recent year available)"""
+  - densità della popolazione: 57 per mi2 per entrambi i paesi
+ Per calcolare il numero di morti pro capite e l'indice GDP utilizzeremo i dataset COVID-19 di Our World in Dtat, in particolare i seguenti dati:
+   - numero di morti (new_deaths: New deaths attributed to COVID-19)
+   - numero di popolazione (gdp_per_capita: Gross domestic product at purchasing power parity (constant 2011 international dollars), most recent year available)"""
 
 
 import csv
@@ -85,6 +85,8 @@ if total_deaths_s > total_deaths_n and average_gdp_n>average_gdp_s:
 
 else: print('\nWe have contradicted the hypothesis that countries with lower GPD per capita have higher death rates.')
 
+#Creamo due Bar Chart per mostrare i risultati ottenuti
+ 
 import matplotlib.pyplot as plt
 
 continent = ['North America', 'South America']
