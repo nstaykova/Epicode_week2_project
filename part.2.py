@@ -29,7 +29,7 @@ with open('covid_data.csv', 'r') as csv_file:
                        if line[1] == "North America"
                        and line[53] != ""]
 
-#Calcoliamo il gdp medio per North America creando un metodo
+#Calcoliamo il gdp medio per North America creando un metodo che calcola la media
 
 def calculate_average(num):
     sum_num = 0
